@@ -105,7 +105,10 @@ interface NetworkConfig {
 }
 
 const networkConfigs: NetworkConfig[] = [
-  { network: 'mainnet', chainId: 1 },
+  {
+    network: 'mainnet', chainId: 1,
+    url: `https://dry-ultra-cherry.quiknode.pro/${QUICKNODE_KEY}`,
+  },
   { network: 'ropsten', chainId: 3 },
   { network: 'rinkeby', chainId: 4 },
   { network: 'goerli', chainId: 5 },
@@ -123,7 +126,7 @@ const networkConfigs: NetworkConfig[] = [
   {
     network: 'base',
     chainId: 8453,
-    url: `https://fluent-prettiest-scion.base-mainnet.quiknode.pro/${QUICKNODE_KEY}`,
+    url: `https://dry-ultra-cherry.base-mainnet.quiknode.pro/${QUICKNODE_KEY}`,
   },
   {
     network: 'arbitrum',
